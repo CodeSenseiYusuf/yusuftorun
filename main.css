@@ -1,69 +1,155 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter+Tight:wght@400;500;600;700&family=Rubik:ital,wght@0,500;0,600;1,500&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap'); */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
 *{
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
-
 html{
-    font-size: 62.5%;
+  font-size: 62.5%;
 }
-
 body{
-    background-color: #CAC7C4    ;
-    font-family: 'Inter Tight', sans-serif;
+  background-color: #23252C;
+  /* font-family: 'Inter', sans-serif; */
+  font-family: 'Poppins', sans-serif;
 }
-
 a{
-    all: unset;
+  all: unset;
 }
 
 .main{
-    height: 100vh;
-    width: 100vw;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-
-
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .bcard{
-    width: 31.7rem;
-    margin: 1rem;
+  width: 31.7rem;
+  margin: 1rem;
 }
 
-/* Header Styles*/
+/* Header Styles */
 
 .bcard__profile-img{
-    width: 31.7rem;
-    height: 31.7rem;
-    border-radius: 10px 10px 0px 0px;
-    object-fit: cover;
-    object-position: top right;
+  width: 31.7rem;
+  height: 31.7rem;
+  border-radius: 10px 10px 0px 0px;
+  object-fit: cover;
+  object-position: top right;
 }
 
+/* Body Styles */
 .bcard__body{
-    background-color: #006d77;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    align-items: center;
-    justify-content: center;
-    padding-left: 3.5rem;
-    padding-right: 3.5rem;
+  background-color: #1A1B21;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding-left: 3.5rem;
+  padding-right: 3.5rem;
 }
-
 .bcard__heading-wrapper{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding: 1.6rem;
-
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 1.6rem;
 }
 
-    .bcard__heading-wrapper * + *{
-        margin-top: 0.5em;
-    }
+.bcard__heading-wrapper * + * {
+  margin-top: 0.5em;
+}
+
+.bcard__name {
+  color: #ffffff;
+  font-size: 2.5rem;
+  font-weight: bold;
+  line-height: 30px;
+}
+
+.bcard__title{
+  color: #F3BF99;
+  font-weight: 400;
+  font-size: 1.28rem;
+}
+
+.bcard__btn-wrapper{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+.bcard__btn{
+  min-width: 11.5rem;
+  height: 3.4rem;
+  cursor: pointer;
+  border-radius: 6px;
+  box-shadow: 0px 1px 2px rgba(0,0,0,0.05);
+}
+.bcard__btn-icon{
+  margin-right: 1rem;
+  font-size: 1.4rem;
+}
+
+.bcard__btn--email{
+  background: #FFFFFF;
+  border: 1px solid #D1D5DB;
+}
+
+.bcard__btn--linkedin{
+  background: #5093E2;
+  color: #FFFFFF;
+}
+
+.bcard__text-wrapper{
+  margin-top: 1.8rem;
+  margin-bottom: 1.8rem;
+}
+
+.bcard__text-wrapper * + * {
+  margin-top: 1em;
+}
+
+.bcard__heading{
+  color: #f5f5f5;
+  font-size: 1.6rem;
+}
+
+.bcard__text{
+  color: grey;
+  font-size: 1.08rem;
+}
+
+/* Footer Styles */
+
+.bcard__footer {
+  height: 6.5rem;
+  background-color: #1a1b21;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 0px 0px 10px 10px;
+}
+
+.bcard__footer-icon {
+  font-size: 2.7rem;
+  padding: 0.2em;
+  background-color: #918E9B;
+  margin-right: 2.4rem;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.bcard__footer-icon:last-of-type{
+  margin-right: 0;
+}
+
+@media (max-height:750px){
+  .main {
+    height: auto;
+  }
+}
