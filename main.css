@@ -40,6 +40,12 @@ a{
   border-radius: 10px 10px 0px 0px;
   object-fit: cover;
   object-position: top right;
+  display: inline-block;
+  transition: transform 0.3s;
+}
+
+.bcard__profile-img:hover{
+  transform: scale(0.9);
 }
 
 /* Body Styles */
@@ -96,8 +102,9 @@ a{
 }
 
 .bcard__btn--email{
-  background: #FFFFFF;
+  background: #92e18a;
   border: 1px solid #D1D5DB;
+  
 }
 
 .bcard__btn--linkedin{
@@ -119,9 +126,17 @@ a{
   font-size: 1.6rem;
 }
 
-.bcard__text{
+.bcard__text1{
+  color: #79a6cf;
+  font-size: 1.12rem;
+}
+
+.bcard__text2{
+  color: aqua;
+}
+
+.bcard__text3{
   color: grey;
-  font-size: 1.08rem;
 }
 
 /* Footer Styles */
