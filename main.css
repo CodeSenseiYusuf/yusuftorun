@@ -83,6 +83,10 @@ a{
   font-size: 1.28rem;
 }
 
+.email-link{
+  display: inline-block;
+}
+
 .bcard__btn-wrapper{
   display: flex;
   align-items: center;
@@ -102,9 +106,33 @@ a{
 }
 
 .bcard__btn--email{
-  background: #92e18a;
-  border: 1px solid #D1D5DB;
   
+  border: 1px solid #000000;
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #dae200; /* İlk arkaplan rengi */
+  color: white;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  
+}
+
+.email-link:hover .bcard__btn--email{
+  background-color: #ff6a00; /* İkinci arkaplan rengi */
+  animation: buton-sallanma 0.3s ease-in-out;
+}
+
+@keyframes buton-sallanma {
+  0%, 100% {
+    transform: translateX(0);
+  }
+  25%, 75% {
+    transform: translateX(-5px);
+  }
+  50% {
+    transform: translateX(5px);
+  }
 }
 
 .bcard__btn--linkedin{
@@ -127,10 +155,19 @@ a{
 }
 
 .bcard__text1{
-  color: #79a6cf;
+  color: #ffffff;
   font-size: 1.12rem;
+  
+  
+}
+.effect{
+font-size: 24px;
+transition: transform 0.3s;
 }
 
+.effect:hover{
+transform: scale(1.1);
+}
 .bcard__text2{
   color: aqua;
 }
