@@ -38,16 +38,7 @@ a{
   width: 31.7rem;
   height: 31.7rem;
   border-radius: 10px 10px 0px 0px;
-  object-fit: cover;
-  object-position: top right;
-  display: inline-block;
-  transition: transform 0.3s;
 }
-
-.bcard__profile-img:hover{
-  transform: scale(0.9);
-}
-
 /* Body Styles */
 .bcard__body{
   background-color: #1A1B21;
@@ -110,36 +101,43 @@ a{
   border: 1px solid #000000;
   padding: 10px 20px;
   font-size: 16px;
-  background-color: #dae200; /* İlk arkaplan rengi */
+  background-color: #ff0000; /* İlk arkaplan rengi */
   color: white;
   border: none;
   cursor: pointer;
-  transition: background-color 0.3s;
+  object-fit: cover;
+  object-position: top right;
+  display: inline-block;
+  transition: all 0.3s ease-in-out;
   
 }
 
+.bcard__btn--email:hover{
+  transform: scale(0.9);
+}
+
 .email-link:hover .bcard__btn--email{
-  background-color: #ff6a00; /* İkinci arkaplan rengi */
+  background-color: #ee6969; /* İkinci arkaplan rengi */
   animation: buton-sallanma 0.3s ease-in-out;
 }
 
-@keyframes buton-sallanma {
-  0%, 100% {
-    transform: translateX(0);
-  }
-  25%, 75% {
-    transform: translateX(-5px);
-  }
-  50% {
-    transform: translateX(5px);
-  }
-}
+
 
 .bcard__btn--linkedin{
+  padding: 10px 20px;
+  font-size: 16px;
   background: #5093E2;
   color: #FFFFFF;
+  border: none;
+  cursor: pointer;
+  object-fit: cover;
+  object-position: top right;
+  display: inline-block;
+  transition: transform 0.3s;
 }
-
+.bcard__btn--linkedin:hover{
+  transform: scale(0.9);
+}
 .bcard__text-wrapper{
   margin-top: 1.8rem;
   margin-bottom: 1.8rem;
@@ -156,17 +154,7 @@ a{
 
 .bcard__text1{
   color: #ffffff;
-  font-size: 1.12rem;
-  
-  
-}
-.effect{
-font-size: 24px;
-transition: transform 0.3s;
-}
-
-.effect:hover{
-transform: scale(1.1);
+  font-size: 1.18rem;
 }
 .bcard__text2{
   color: aqua;
