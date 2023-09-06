@@ -21,7 +21,7 @@ html{
   }
 }
 body{
-  background-image: linear-gradient(to right, #ff0067, #FF7801);
+  background-image: linear-gradient(to left, #9999ff 0%, #ff6699 100%);
   animation: gradientAnimation 5s linear infinite;
     /* font-family: 'Inter', sans-serif; */
   font-family: 'Poppins', sans-serif;
@@ -52,14 +52,25 @@ a{
   border-radius: 10px 10px 0px 0px;
 }
 /* Body Styles */
-.bcard__body{
-  background-color: #1A1B21;
+.bcard__body::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(255, 255, 255, 0.5); /* Arkaplan rengi, opacity eklenmiş */
+  z-index: -1; /* Bu öğenin metin ve içeriklerin altında olmasını sağlar */
+}
+
+.bcard__body {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   padding-left: 3.5rem;
   padding-right: 3.5rem;
+  position: relative; /* ::before öğesi için pozisyonu belirtin */
 }
 .bcard__heading-wrapper{
   display: flex;
@@ -74,14 +85,14 @@ a{
 }
 
 .bcard__name {
-  color: #ffffff;
+  color: #000000;
   font-size: 2.5rem;
   font-weight: bold;
   line-height: 30px;
 }
 
 .bcard__title{
-  color: #F3BF99;
+  color: hsl(109, 77%, 52%);
   font-weight: 400;
   font-size: 1.28rem;
 }
@@ -102,6 +113,7 @@ a{
   cursor: pointer;
   border-radius: 6px;
   box-shadow: 0px 1px 2px rgba(0,0,0,0.05);
+  
 }
 .bcard__btn-icon{
   margin-right: 1rem;
@@ -165,7 +177,7 @@ a{
 }
 
 .bcard__text1{
-  color: #ffffff;
+  color: #000000;
   font-size: 1.18rem;
 }
 .bcard__text2{
@@ -180,7 +192,8 @@ a{
 
 .bcard__footer {
   height: 6.5rem;
-  background-color: #1a1b21;
+  background-color: #ffffff;
+  opacity: 0.5;
   display: flex;
   justify-content: center;
   align-items: center;
