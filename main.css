@@ -156,7 +156,7 @@ a{
 /* LinkedIn butonunun üzerine geldiğinde küçülme efekti */
 .bcard__btn--linkedin:hover {
     transform: scale(0.9);
-    background-color: #ffffff; /* Arka plan rengini beyaza döndürün */
+    background-color: #AED2FF; /* Arka plan rengini beyaza döndürün */
     animation: buton-sallanma 0.3s ease-in-out; /* Sallanma animasyonunu ekleyin */
 }
 
