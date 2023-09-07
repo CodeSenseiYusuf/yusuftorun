@@ -141,23 +141,20 @@ a{
 
 
 
-/* LinkedIn butonu stilini düzenleyin, email butonu ile aynı stil */
-.bcard__btn--linkedin, .email-link {
-    padding: 10px 20px;
-    font-size: 16px;
-    background: #5093E2;
-    color: #FFFFFF;
-    border: none;
-    cursor: pointer;
-    display: inline-block;
-    transition: transform 0.3s ease-in-out;
+.bcard__btn--linkedin{
+  padding: 10px 20px;
+  font-size: 16px;
+  background: var(--linkedin-bg);
+  color: #FFFFFF;
+  border: none;
+  cursor: pointer;
+  object-fit: cover;
+  object-position: top right;
+  display: inline-block;
+  transition: transform 0.3s;
 }
-
-/* LinkedIn butonunun üzerine geldiğinde küçülme efekti */
-.bcard__btn--linkedin:hover, .email-link:hover {
-    transform: scale(0.9); /* Butonu küçültmek için scale kullanın */
-    background-color: #ffffff; /* Arka plan rengini beyaza döndürün */
-    animation: buton-sallanma 0.3s ease-in-out; /* Sallanma animasyonunu ekleyin */
+.bcard__btn--linkedin:hover{
+  transform: scale(0.9);
 }
 .bcard__text-wrapper{
   margin-top: 1.8rem;
