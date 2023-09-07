@@ -91,6 +91,9 @@ a{
 .email-link{
   display: inline-block;
 }
+.linkedin-link{
+  display: inline-block;
+}
 
 .bcard__btn-wrapper{
   display: flex;
@@ -152,6 +155,8 @@ a{
 }
 .bcard__btn--linkedin:hover{
   transform: scale(0.9);
+  animation: buton-sallanma 0.3s ease-in-out;
+}
 }
 
 .linkedin-link:hover .bcard__btn--linkedin{
