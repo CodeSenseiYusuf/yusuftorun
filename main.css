@@ -155,7 +155,6 @@ a{
 }
 .bcard__btn--linkedin:hover{
   transform: scale(0.9);
-  animation: buton-sallanma 0.3s ease-in-out;
 }
 }
 
