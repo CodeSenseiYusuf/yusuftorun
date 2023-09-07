@@ -151,7 +151,7 @@ a{
   object-fit: cover;
   object-position: top right;
   display: inline-block;
-  transition: transform 0.3s;
+  transition: transform 0.3s ease-in-out;
 }
 .bcard__btn--linkedin:hover{
   transform: scale(0.9);
@@ -160,6 +160,7 @@ a{
 
 .linkedin-link:hover .bcard__btn--linkedin{
   background-color: #ffffff;
+    animation: buton-sallanma 0.3s ease-in-out;
 }
 .bcard__text-wrapper{
   margin-top: 1.8rem;
