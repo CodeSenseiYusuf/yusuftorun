@@ -141,29 +141,31 @@ a{
 
 
 
-.bcard__btn--linkedin{
-  padding: 10px 20px;
-  font-size: 16px;
-  background: #5093E2;
-  color: #FFFFFF;
-  border: none;
-  cursor: pointer;
-  object-fit: cover;
-  object-position: top right;
-  display: inline-block;
-  transition: transform 0.3s ease-in-out;
+/* LinkedIn butonu stilini düzenleyin */
+.bcard__btn--linkedin {
+    padding: 10px 20px;
+    font-size: 16px;
+    background: #5093E2;
+    color: #FFFFFF;
+    border: none;
+    cursor: pointer;
+    display: inline-block;
+    transition: transform 0.3s ease-in-out;
 }
-/* LinkedIn butonuna hover efekti ekleme */
+
+/* LinkedIn butonunun üzerine geldiğinde küçülme efekti */
 .bcard__btn--linkedin:hover {
-    background-color: white; /* Arka plan rengini beyaz yapabilirsiniz */
-    color: #0077b5; /* Metin rengini LinkedIn mavi rengine geri döndürün */
+    transform: scale(0.9);
+    background-color: #ffffff; /* Arka plan rengini beyaza döndürün */
+    animation: buton-sallanma 0.3s ease-in-out; /* Sallanma animasyonunu ekleyin */
 }
 
-
-.linkedin-link:hover .bcard__btn--linkedin{
-  background-color: #ffffff;
+/* İsteğe bağlı olarak butonun üzerine gelme efekti ekleyebilirsiniz */
+.linkedin-link:hover .bcard__btn--linkedin {
     animation: buton-sallanma 0.3s ease-in-out;
 }
+
+/* Buton sallanma animasyonunu tanımlayın */
 .bcard__text-wrapper{
   margin-top: 1.8rem;
   margin-bottom: 1.8rem;
