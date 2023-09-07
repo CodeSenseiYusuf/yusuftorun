@@ -144,7 +144,7 @@ a{
 .bcard__btn--linkedin{
   padding: 10px 20px;
   font-size: 16px;
-  background: var(--linkedin-bg);
+  background: blue;
   color: #FFFFFF;
   border: none;
   cursor: pointer;
