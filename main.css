@@ -153,10 +153,12 @@ a{
   display: inline-block;
   transition: transform 0.3s ease-in-out;
 }
-.bcard__btn--linkedin:hover{
-  transform: scale(0.9);
+/* LinkedIn butonuna hover efekti ekleme */
+.bcard__btn--linkedin:hover {
+    background-color: white; /* Arka plan rengini beyaz yapabilirsiniz */
+    color: #0077b5; /* Metin rengini LinkedIn mavi rengine geri döndürün */
 }
-}
+
 
 .linkedin-link:hover .bcard__btn--linkedin{
   background-color: #ffffff;
