@@ -101,9 +101,12 @@ a{
 }
 
 .bcard__title{
-  color: hsl(109, 77%, 52%);
+
   font-weight: 400;
   font-size: 1.28rem;
+  background-image: linear-gradient(to left, violet, indigo, blue, green, yellow, orange, red);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 .email-link{
