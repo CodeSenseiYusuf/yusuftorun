@@ -66,6 +66,8 @@ a{
   width: 31.7rem;
   height: 31.7rem;
   border-radius: 10px 10px 0px 0px;
+  object-fit: cover;
+  object-position: top right;
 }
 /* Body Styles */
 .bcard__body::before {
@@ -143,47 +145,15 @@ a{
 }
 
 .bcard__btn--email{
-  
-  border: 1px solid #000000;
-  padding: 10px 20px;
-  font-size: 16px;
-  background-color: #ff0000; /* İlk arkaplan rengi */
+  background: #11901b;
   color: white;
-  border-radius: 12px;
-  cursor: pointer;
-  object-fit: cover;
-  object-position: top right;
-  display: inline-block;
-  transition: all 0.3s ease-in-out;
-  
 }
-
-.bcard__btn--email:hover{
-  transform: scale(0.9);
-}
-
-.email-link:hover .bcard__btn--email{
-  background-color: #ee6969; /* İkinci arkaplan rengi */
-  animation: buton-sallanma 0.3s ease-in-out;
-}
-
-
 
 .bcard__btn--linkedin{
-  padding: 10px 20px;
-  font-size: 16px;
-  background: blue;
+  background: #5093E2;
   color: #FFFFFF;
-  border-radius: 12px;
-  cursor: pointer;
-  object-fit: cover;
-  object-position: top right;
-  display: inline-block;
-  transition: transform 0.3s;
 }
-.bcard__btn--linkedin:hover{
-  transform: scale(0.9);
-}
+
 .bcard__text-wrapper{
   margin-top: 1.8rem;
   margin-bottom: 1.8rem;
@@ -198,24 +168,16 @@ a{
   font-size: 1.6rem;
 }
 
-.bcard__text1{
-  color: #000000;
-  font-size: 1.18rem;
-}
-.bcard__text2{
-  color: aqua;
-}
-
-.bcard__text3{
+.bcard__text{
   color: grey;
+  font-size: 1.08rem;
 }
 
 /* Footer Styles */
 
 .bcard__footer {
   height: 6.5rem;
-  background-color: #ffffff;
-  opacity: 0.5;
+  background-color: #1a1b21;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -225,7 +187,7 @@ a{
 .bcard__footer-icon {
   font-size: 2.7rem;
   padding: 0.2em;
-  
+  background-color: #918E9B;
   margin-right: 2.4rem;
   border-radius: 5px;
   cursor: pointer;
@@ -240,4 +202,3 @@ a{
     height: auto;
   }
 }
- 
