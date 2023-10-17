@@ -145,8 +145,8 @@ a{
 }
 
 .bcard__btn--email{
-  background: #11901b;
-  color: white;
+  background: #FFFFFF;
+  border: 1px solid #D1D5DB;
 }
 
 .bcard__btn--linkedin{
