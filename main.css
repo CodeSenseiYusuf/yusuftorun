@@ -1,52 +1,80 @@
 /* @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap'); */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
 
-*{
+* {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
-html{
+
+html {
   font-size: 62.5%;
 }
 
-html, body {
+html,
+body {
   height: 100%;
   width: 100%;
 }
 
-body{
+body {
   background: linear-gradient(90deg, #ffc100, #cd00ff, #009aff, #ff0000);
-    background-size: 800% 800%;
+  background-size: 800% 800%;
 
-    -webkit-animation: AnimationName 30s ease infinite;
-    -moz-animation: AnimationName 30s ease infinite;
-    animation: AnimationName 30s ease infinite;
-    /* font-family: 'Inter', sans-serif; */
+  -webkit-animation: AnimationName 30s ease infinite;
+  -moz-animation: AnimationName 30s ease infinite;
+  animation: AnimationName 30s ease infinite;
+  /* font-family: 'Inter', sans-serif; */
   font-family: 'Poppins', sans-serif;
 }
 
 @-webkit-keyframes AnimationName {
-  0%{background-position:0% 50%}
-  50%{background-position:100% 50%}
-  100%{background-position:0% 50%}
-}
-@-moz-keyframes AnimationName {
-  0%{background-position:0% 50%}
-  50%{background-position:100% 50%}
-  100%{background-position:0% 50%}
-}
-@keyframes AnimationName {
-  0%{background-position:0% 50%}
-  50%{background-position:100% 50%}
-  100%{background-position:0% 50%}
+  0% {
+    background-position: 0% 50%
+  }
+
+  50% {
+    background-position: 100% 50%
+  }
+
+  100% {
+    background-position: 0% 50%
+  }
 }
 
-a{
+@-moz-keyframes AnimationName {
+  0% {
+    background-position: 0% 50%
+  }
+
+  50% {
+    background-position: 100% 50%
+  }
+
+  100% {
+    background-position: 0% 50%
+  }
+}
+
+@keyframes AnimationName {
+  0% {
+    background-position: 0% 50%
+  }
+
+  50% {
+    background-position: 100% 50%
+  }
+
+  100% {
+    background-position: 0% 50%
+  }
+}
+
+a {
   all: unset;
 }
 
-.main{
+.main {
   height: 100vh;
   width: 100vw;
   display: flex;
@@ -55,20 +83,21 @@ a{
   align-items: center;
 }
 
-.bcard{
+.bcard {
   width: 31.7rem;
   margin: 1rem;
 }
 
 /* Header Styles */
 
-.bcard__profile-img{
+.bcard__profile-img {
   width: 31.7rem;
   height: 31.7rem;
   border-radius: 10px 10px 0px 0px;
   object-fit: cover;
   object-position: top right;
 }
+
 /* Body Styles */
 .bcard__body::before {
   content: "";
@@ -77,8 +106,10 @@ a{
   left: 0;
   right: 0;
   bottom: 0;
-  background-color: rgba(255, 255, 255, 0.5); /* Arkaplan rengi, opacity eklenmiş */
-  z-index: -1; /* Bu öğenin metin ve içeriklerin altında olmasını sağlar */
+  background-color: rgba(255, 255, 255, 0.5);
+  /* Arkaplan rengi, opacity eklenmiş */
+  z-index: -1;
+  /* Bu öğenin metin ve içeriklerin altında olmasını sağlar */
 }
 
 .bcard__body {
@@ -88,9 +119,11 @@ a{
   justify-content: center;
   padding-left: 3.5rem;
   padding-right: 3.5rem;
-  position: relative; /* ::before öğesi için pozisyonu belirtin */
+  position: relative;
+  /* ::before öğesi için pozisyonu belirtin */
 }
-.bcard__heading-wrapper{
+
+.bcard__heading-wrapper {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -98,7 +131,7 @@ a{
   padding: 1.6rem;
 }
 
-.bcard__heading-wrapper * + * {
+.bcard__heading-wrapper *+* {
   margin-top: 0.5em;
 }
 
@@ -109,7 +142,7 @@ a{
   line-height: 30px;
 }
 
-.bcard__title{
+.bcard__title {
 
   font-weight: 400;
   font-size: 1.28rem;
@@ -118,57 +151,60 @@ a{
   -webkit-text-fill-color: transparent;
 }
 
-.email-link{
-  display: inline-block;
-}
-.linkedin-link{
+.email-link {
   display: inline-block;
 }
 
-.bcard__btn-wrapper{
+.linkedin-link {
+  display: inline-block;
+}
+
+.bcard__btn-wrapper {
   display: flex;
   align-items: center;
   justify-content: space-between;
   width: 100%;
 }
-.bcard__btn{
+
+.bcard__btn {
   min-width: 11.5rem;
   height: 3.4rem;
   cursor: pointer;
   border-radius: 6px;
-  box-shadow: 0px 1px 2px rgba(0,0,0,0.05);
-  
+  box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.05);
+
 }
-.bcard__btn-icon{
+
+.bcard__btn-icon {
   margin-right: 1rem;
   font-size: 1.4rem;
 }
 
-.bcard__btn--email{
+.bcard__btn--email {
   background: #FFFFFF;
   border: 1px solid #D1D5DB;
 }
 
-.bcard__btn--linkedin{
+.bcard__btn--linkedin {
   background: #5093E2;
   color: #FFFFFF;
 }
 
-.bcard__text-wrapper{
+.bcard__text-wrapper {
   margin-top: 1.8rem;
   margin-bottom: 1.8rem;
 }
 
-.bcard__text-wrapper * + * {
+.bcard__text-wrapper *+* {
   margin-top: 1em;
 }
 
-.bcard__heading{
+.bcard__heading {
   color: #f5f5f5;
   font-size: 1.6rem;
 }
 
-.bcard__text{
+.bcard__text {
   color: grey;
   font-size: 1.08rem;
 }
@@ -192,11 +228,11 @@ a{
   cursor: pointer;
 }
 
-.bcard__footer-icon:last-of-type{
+.bcard__footer-icon:last-of-type {
   margin-right: 0;
 }
 
-@media (max-height:750px){
+@media (max-height:750px) {
   .main {
     height: auto;
   }
