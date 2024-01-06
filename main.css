@@ -177,8 +177,8 @@ a{
 
 .bcard__footer {
   height: 6.5rem;
-  background-color: #1a1b21;
-  display: flex;
+  background-color: #ffffff;
+  opacity: 0.5;
   justify-content: center;
   align-items: center;
   border-radius: 0px 0px 10px 10px;
@@ -187,7 +187,6 @@ a{
 .bcard__footer-icon {
   font-size: 2.7rem;
   padding: 0.2em;
-  background-color: #918E9B;
   margin-right: 2.4rem;
   border-radius: 5px;
   cursor: pointer;
