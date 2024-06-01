@@ -11,35 +11,39 @@ html {
   font-size: 62.5%;
 }
 
-html, body {
+html,
+body {
   height: 100%;
   width: 100%;
 }
 
 body {
   background: linear-gradient(90deg, #ffc100, #cd00ff, #009aff, #ff0000);
-  background-size: 800% 800%;
-  -webkit-animation: AnimationName 30s ease infinite;
-  -moz-animation: AnimationName 30s ease infinite;
-  animation: AnimationName 30s ease infinite;
-  /* font-family: 'Inter', sans-serif; */
+    background-size: 800% 800%;
+
+    -webkit-animation: AnimationName 30s ease infinite;
+    -moz-animation: AnimationName 30s ease infinite;
+    animation: AnimationName 30s ease infinite;
+    /* font-family: 'Inter', sans-serif; */
   font-family: 'Poppins', sans-serif;
 }
 
 @-webkit-keyframes AnimationName {
-  0% {background-position:0% 50%}
-  50% {background-position:100% 50%}
-  100% {background-position:0% 50%}
+  0%{background-position:0% 50%}
+  50%{background-position:100% 50%}
+  100%{background-position:0% 50%}
 }
+
 @-moz-keyframes AnimationName {
-  0% {background-position:0% 50%}
-  50% {background-position:100% 50%}
-  100% {background-position:0% 50%}
+  0%{background-position:0% 50%}
+  50%{background-position:100% 50%}
+  100%{background-position:0% 50%}
 }
+
 @keyframes AnimationName {
-  0% {background-position:0% 50%}
-  50% {background-position:100% 50%}
-  100% {background-position:0% 50%}
+  0%{background-position:0% 50%}
+  50%{background-position:100% 50%}
+  100%{background-position:0% 50%}
 }
 
 a {
@@ -61,7 +65,8 @@ a {
 }
 
 /* Header Styles */
-.bcard__profile-img {
+
+.bcard__profile-img{
   width: 31.7rem;
   height: 31.7rem;
   border-radius: 10px 10px 0px 0px;
@@ -77,8 +82,10 @@ a {
   left: 0;
   right: 0;
   bottom: 0;
-  background-color: rgba(255, 255, 255, 0.5); /* Arkaplan rengi, opacity eklenmiş */
-  z-index: -1; /* Bu öğenin metin ve içeriklerin altında olmasını sağlar */
+  background-color: rgba(255, 255, 255, 0.5);
+  /* Arkaplan rengi, opacity eklenmiş */
+  z-index: -1;
+  /* Bu öğenin metin ve içeriklerin altında olmasını sağlar */
 }
 
 .bcard__body {
@@ -88,9 +95,10 @@ a {
   justify-content: center;
   padding-left: 3.5rem;
   padding-right: 3.5rem;
-  position: relative; /* ::before öğesi için pozisyonu belirtin */
+  position: relative;
+  /* ::before öğesi için pozisyonu belirtin */
 }
-.bcard__heading-wrapper {
+.bcard__heading-wrapper{
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -98,7 +106,7 @@ a {
   padding: 1.6rem;
 }
 
-.bcard__heading-wrapper * + * {
+.bcard__heading-wrapper *+* {
   margin-top: 0.5em;
 }
 
@@ -109,7 +117,8 @@ a {
   line-height: 30px;
 }
 
-.bcard__title {
+.bcard__title{
+
   font-weight: 400;
   font-size: 1.28rem;
   background-image: linear-gradient(to left, violet, indigo, blue, green, yellow, orange, red);
@@ -117,53 +126,40 @@ a {
   -webkit-text-fill-color: transparent;
 }
 
-.email-link {
+.email-link{
   display: inline-block;
 }
-.linkedin-link {
+.linkedin-link{
   display: inline-block;
 }
 
-.bcard__btn-wrapper {
+.bcard__btn-wrapper{
   display: flex;
   align-items: center;
   justify-content: space-between;
   width: 100%;
 }
-
-/* New button styles */
-button {
-  /* Variables */
-  --button_radius: 0.75em;
-  --button_color: #e8e8e8;
-  --button_outline_color: #000000;
-  font-size: 17px;
-  font-weight: bold;
-  border: none;
-  border-radius: var(--button_radius);
-  background: var(--button_outline_color);
+.bcard__btn{
+  min-width: 11.5rem;
+  height: 3.4rem;
+  cursor: pointer;
+  border-radius: 6px;
+  box-shadow: 0px 1px 2px rgba(0,0,0,0.05);
+  
+}
+.bcard__btn-icon{
+  margin-right: 1rem;
+  font-size: 1.4rem;
 }
 
-.button_top {
-  display: block;
-  box-sizing: border-box;
-  border: 2px solid var(--button_outline_color);
-  border-radius: var(--button_radius);
-  padding: 0.75em 1.5em;
-  background: var(--button_color);
-  color: var(--button_outline_color);
-  transform: translateY(-0.2em);
-  transition: transform 0.1s ease;
+.bcard__btn--email{
+  background: #11901b;
+  color: white;
 }
 
-button:hover .button_top {
-  /* Pull the button upwards when hovered */
-  transform: translateY(-0.33em);
-}
-
-button:active .button_top {
-  /* Push the button downwards when pressed */
-  transform: translateY(0);
+.bcard__btn--linkedin{
+  background: #5093E2;
+  color: #FFFFFF;
 }
 
 .bcard__text-wrapper {
@@ -171,7 +167,7 @@ button:active .button_top {
   margin-bottom: 1.8rem;
 }
 
-.bcard__text-wrapper * + * {
+.bcard__text-wrapper *+* {
   margin-top: 1em;
 }
 
@@ -190,7 +186,7 @@ button:active .button_top {
   height: 6.5rem;
   background-color: #ffffff;
   opacity: 0.5;
-  display: flex;
+  display: flex   ;
   justify-content: center;
   align-items: center;
   border-radius: 0px 0px 10px 10px;
@@ -208,7 +204,7 @@ button:active .button_top {
   margin-right: 0;
 }
 
-@media (max-height: 750px) {
+@media (max-height:750px){
   .main {
     height: auto;
   }
