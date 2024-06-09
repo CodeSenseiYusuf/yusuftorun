@@ -127,43 +127,99 @@ a {
 .bcard__btn-wrapper {
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: center;
   width: 100%;
+  gap: 1rem;
 }
 
-/* New button styles */
-button {
-  /* Variables */
-  --button_radius: 0.75em;
-  --button_color: #e8e8e8;
-  --button_outline_color: #000000;
-  font-size: 17px;
-  font-weight: bold;
-  border: none;
-  border-radius: var(--button_radius);
-  background: var(--button_outline_color);
+.bcard__btn {
+  display: inline-block;
+  width: 130px;
+  height: 40px;
+  border-radius: 8px;
+  border: 1px solid #03045e;
+  position: relative;
+  overflow: hidden;
+  transition: all 0.5s ease-in;
+  z-index: 1;
+  background: none;
+  padding: 0;
 }
 
-.button_top {
-  display: block;
-  box-sizing: border-box;
-  border: 2px solid var(--button_outline_color);
-  border-radius: var(--button_radius);
-  padding: 0.75em 1.5em;
-  background: var(--button_color);
-  color: var(--button_outline_color);
-  transform: translateY(-0.2em);
-  transition: transform 0.1s ease;
+.bcard__btn--email::before,
+.bcard__btn--email::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  width: 0;
+  height: 100%;
+  transform: skew(15deg);
+  transition: all 0.5s;
+  overflow: hidden;
+  z-index: -1;
 }
 
-button:hover .button_top {
-  /* Pull the button upwards when hovered */
-  transform: translateY(-0.33em);
+.bcard__btn--email::before {
+  left: -10px;
+  background: #240046;
 }
 
-button:active .button_top {
-  /* Push the button downwards when pressed */
-  transform: translateY(0);
+.bcard__btn--email::after {
+  right: -10px;
+  background: #5a189a;
+}
+
+.bcard__btn--linkedin::before,
+.bcard__btn--linkedin::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  width: 0;
+  height: 100%;
+  transform: skew(15deg);
+  transition: all 0.5s;
+  overflow: hidden;
+  z-index: -1;
+}
+
+.bcard__btn--linkedin::before {
+  left: -10px;
+  background: #ff8000;
+}
+
+.bcard__btn--linkedin::after {
+  right: -10px;
+  background: #ffa500;
+}
+
+.bcard__btn--email:hover::before,
+.bcard__btn--email:hover::after {
+  width: 58%;
+}
+
+.bcard__btn--linkedin:hover::before,
+.bcard__btn--linkedin:hover::after {
+  width: 58%;
+}
+
+.bcard__btn--email:hover span {
+  color: #e0aaff;
+  transition: 0.3s;
+}
+
+.bcard__btn--linkedin:hover span {
+  color: #ffffff;
+  transition: 0.3s;
+}
+
+.bcard__btn span {
+  color: #03045e;
+  font-size: 16px;
+  transition: all 0.3s ease-in;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
 }
 
 .bcard__text-wrapper {
