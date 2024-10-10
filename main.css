@@ -11,7 +11,8 @@ html {
   font-size: 62.5%;
 }
 
-html, body {
+html,
+body {
   height: 100%;
   width: 100%;
 }
@@ -27,19 +28,45 @@ body {
 }
 
 @-webkit-keyframes AnimationName {
-  0% {background-position:0% 50%}
-  50% {background-position:100% 50%}
-  100% {background-position:0% 50%}
+  0% {
+    background-position: 0% 50%
+  }
+
+  50% {
+    background-position: 100% 50%
+  }
+
+  100% {
+    background-position: 0% 50%
+  }
 }
+
 @-moz-keyframes AnimationName {
-  0% {background-position:0% 50%}
-  50% {background-position:100% 50%}
-  100% {background-position:0% 50%}
+  0% {
+    background-position: 0% 50%
+  }
+
+  50% {
+    background-position: 100% 50%
+  }
+
+  100% {
+    background-position: 0% 50%
+  }
 }
+
 @keyframes AnimationName {
-  0% {background-position:0% 50%}
-  50% {background-position:100% 50%}
-  100% {background-position:0% 50%}
+  0% {
+    background-position: 0% 50%
+  }
+
+  50% {
+    background-position: 100% 50%
+  }
+
+  100% {
+    background-position: 0% 50%
+  }
 }
 
 a {
@@ -77,8 +104,10 @@ a {
   left: 0;
   right: 0;
   bottom: 0;
-  background-color: rgba(255, 255, 255, 0.5); /* Arkaplan rengi, opacity eklenmiş */
-  z-index: -1; /* Bu öğenin metin ve içeriklerin altında olmasını sağlar */
+  background-color: rgba(255, 255, 255, 0.5);
+  /* Arkaplan rengi, opacity eklenmiş */
+  z-index: -1;
+  /* Bu öğenin metin ve içeriklerin altında olmasını sağlar */
 }
 
 .bcard__body {
@@ -88,8 +117,10 @@ a {
   justify-content: center;
   padding-left: 3.5rem;
   padding-right: 3.5rem;
-  position: relative; /* ::before öğesi için pozisyonu belirtin */
+  position: relative;
+  /* ::before öğesi için pozisyonu belirtin */
 }
+
 .bcard__heading-wrapper {
   display: flex;
   flex-direction: column;
@@ -98,7 +129,7 @@ a {
   padding: 1.6rem;
 }
 
-.bcard__heading-wrapper * + * {
+.bcard__heading-wrapper *+* {
   margin-top: 0.5em;
 }
 
@@ -120,6 +151,7 @@ a {
 .email-link {
   display: inline-block;
 }
+
 .linkedin-link {
   display: inline-block;
 }
@@ -227,7 +259,7 @@ a {
   margin-bottom: 1.8rem;
 }
 
-.bcard__text-wrapper * + * {
+.bcard__text-wrapper *+* {
   margin-top: 1em;
 }
 
